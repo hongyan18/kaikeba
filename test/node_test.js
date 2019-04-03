@@ -1,0 +1,1 @@
+console.log("可以啊，你可以学习node了！")

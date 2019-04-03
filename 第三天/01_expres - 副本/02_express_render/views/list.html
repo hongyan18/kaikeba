@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    我是三国人物
+    <hr>
+    imports.num{{num}}
+    imports.reverse{{reverse('小可爱')}}
+    <hr>
+    <ul>
+       {{each heros}}
+            <li>{{$value.name}}</li>
+       {{/each}}
+    </ul>
+</body>
+</html>
