@@ -46,15 +46,15 @@ router.get('/',async ctx=>{
         msgs
     })
 })
-.post('/add',async ctx =>{
-    let username = ctx.session.user.username;
-    let content = ctx.request.body.msg;
-    //加入到数组中，返回最新的消息回去
-    msgs.push({
-        username,content
-    });
-    ctx.body = msgs;
-})
+// .post('/add',async ctx =>{
+//     let username = ctx.session.user.username;
+//     let content = ctx.request.body.msg;
+//     //加入到数组中，返回最新的消息回去
+//     msgs.push({
+//         username,content
+//     });
+//     ctx.body = msgs;
+// })
 //签名的依据
 app.keys = ['test']
 //在服务器内存中存储{sessio_id:用户数据}
